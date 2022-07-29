@@ -21,3 +21,20 @@ for i in range(1, T+1):
     print("#{} {}".format(i, set_score[cnt.index(max(cnt))]))
 
 ## 접근 방법이 잘못된것같아요ㅠ 최빈수가 같은 경우를 못구했다.. 
+
+# 22.07.29 21:31 수정
+# T = int(input()) # 테스트 케이스의 수
+
+# for i in range(1, T+1):
+#     n = int(input()) # 테스트케이스의 번호
+#     most = {} # 번호의 값과 카운트를 담을 딕셔너리
+#     number = map(int, input().split()) 
+
+#     for j in number: 
+#         if j not in most: # 입력값이 딕셔너리 안에 없으면 
+#             most[j] = 1 # 카운트 1
+#         else:
+#             most[j] += 1 # 카운트 1 증가
+
+#     result = sorted(most.keys(), reverse= True) # 딕셔너리의 키 값을 내림차순 정렬
+#     print("#{} {}".format(n, max(result, key=most.get))) # 최대값 산출 후 출력

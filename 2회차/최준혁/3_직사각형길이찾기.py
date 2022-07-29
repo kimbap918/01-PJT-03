@@ -8,3 +8,14 @@ for t in range(1, T+1):
         print('#{} {}'.format(t,square[0])) # 첫번째 숫자 출력
     else: # 같다면?
         print('#{} {}'.format(t,square[2])) # 마지막 숫자 출력
+
+# 22.07.29 21:58 수정
+# T = int(input())
+
+# for i in range(1, T+1):
+#     square = list(input().split())
+#     square.sort() 
+#     if square[0] != square[1]:
+#         print("#{} {}".format(i, square[0]))
+#     elif square[0] == square[1]:
+#         print("#{} {}".format(i, square[2])) 
